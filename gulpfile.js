@@ -14,10 +14,10 @@ const browserSync = require("browser-sync").create();
 const imagemin = require("gulp-imagemin");
 
 // Gulp Path File
-var SCSS_FILE = "./shared/src/sass/**/*.scss";
-var CSS_FILE = "./shared/src/css/**/*.css";
-var JS_FILE = "./shared/src/js/**/*.js";
-var IMG_FILE = "./shared/src/images/**/*";
+var SCSS_FILE = "./src/sass/**/*.scss";
+var CSS_FILE = "./src/css/**/*.css";
+var JS_FILE = "./src/js/**/*.js";
+var IMG_FILE = "./src/images/**/*";
 
 // Sass Function
 function sass() {
@@ -25,14 +25,14 @@ function sass() {
     .pipe(gulpSass())
     .pipe(postcss([autoprefixer()]))
     .pipe(minifyScss())
-    .pipe(dest("./shared/dist/assets/css"));
+    .pipe(dest("./assets/css"));
 }
 
 // Minify css Function
 function minifycss() {
   return src([CSS_FILE])
     .pipe(minifyScss({ keepBreaks: false }))
-    .pipe(dest("./shared/dist/assets/css"));
+    .pipe(dest("./assets/css"));
 }
 
 // JS Function
@@ -41,7 +41,7 @@ function javascript() {
     src([JS_FILE])
       .pipe(uglify())
       // .pipe(concat("based.js"))
-      .pipe(dest("./shared/dist/assets/js"))
+      .pipe(dest("./assets/js"))
   );
 }
 
@@ -49,7 +49,7 @@ function javascript() {
 function image() {
   return src([IMG_FILE])
     .pipe(imagemin())
-    .pipe(dest("./shared/dist/assets/images"));
+    .pipe(dest("./assets/images"));
 }
 
 
