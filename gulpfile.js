@@ -31,7 +31,7 @@ function sass() {
 // Minify css Function
 function minifycss() {
   return src([CSS_FILE])
-    .pipe(minifyScss())
+    .pipe(minifyScss({ keepBreaks: false }))
     .pipe(dest("./shared/dist/assets/css"));
 }
 

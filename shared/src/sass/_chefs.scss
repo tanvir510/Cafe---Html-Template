@@ -1,0 +1,142 @@
+.chefs{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-image: url('../images/chefs/chefs-banner.jpg');
+    &:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+    }
+    .section_heading{
+        .title{
+            color: $white;
+        }
+    }
+    .chefs_element{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 9;
+        @include breakpoint(tablet){
+            max-width: 80%;
+            margin: 0 auto 25px;
+        }
+        @include breakpoint(mobile_sm){
+            max-width: 100%;
+        }
+        .chefs_item{
+            flex: 25%;
+            padding: 0px 15px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+            @include breakpoint(tablet){
+                flex: 100%;
+                margin: 0 auto 25px;
+            }
+            &:hover{
+                .thumb{
+                    .effect_one{
+                        opacity: 1;
+                        visibility: visible;
+                        top:50%;
+                        left:50%;
+                        transform:translateY(-50%) translateX(-50%);
+                    }
+                    .effect_two{
+                        opacity: 1;
+                        visibility: visible;
+                        top:50%;
+                        left:50%;
+                        transform:translateY(-50%) translateX(-50%);
+                    }
+                    .details{
+                        opacity: 1;
+                    }
+                }
+            }
+            .thumb{
+                border-radius: 4px;
+                border: 1px solid $base1;
+                position: relative;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }  
+                .effect_one{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0 ,0, 0,0.4);
+                    top: -100%;
+                    left: -100%;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.5s ease 0s;
+                    -webkit-transition: 0.5s all ease 0s;
+                    -moz-transition: 0.5s all ease 0s;
+                    -o-transition: 0.5s all ease 0s;
+                }     
+                .effect_two{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0 ,0, 0,0.4);
+                    top: 100%;
+                    left: 100%;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.5s ease 0s;
+                    -webkit-transition: 0.5s all ease 0s;
+                    -moz-transition: 0.5s all ease 0s;
+                    -o-transition: 0.5s all ease 0s;
+                }    
+                .details{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: $transition;
+                    .para{
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: $white;
+                        text-align: center;
+                        padding: 15px;
+                    }
+                }
+            }
+            .content{
+                 padding: 15px;
+                 text-align: center;
+                .name{
+                    a{
+                        font-size: 26px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        color: $white;
+                    }
+                }
+                .desg{
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: .35px;
+                }
+            }
+
+        }
+    }
+}

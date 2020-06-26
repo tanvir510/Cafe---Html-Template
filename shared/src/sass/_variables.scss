@@ -1,6 +1,5 @@
 //== Color Variables
-$base1: #044a28;
-$base2: #bf0000;
+$base1: #dc961b;
 $white: #fff;
 $black: #000000;
 $border1: #bfaf7c;
@@ -11,8 +10,7 @@ $shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
 $p: #696969;
 
 //== Typography
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
-$font1: "Roboto";
+$font1: 'Lato', sans-serif;
 
 //== Font Size Veriables
 $f1: 14px !default;

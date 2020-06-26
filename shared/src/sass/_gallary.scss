@@ -1,0 +1,23 @@
+.gallary{
+    // display: none;
+    .gallary_element{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            width: 100%;
+        }
+        .left{
+            flex: 29%;
+        }
+        .middle{
+            flex: 40%;
+            .middle_inner{
+                display: flex;
+            }
+        }
+        .right{
+            flex: 31%;
+        }
+    }
+        
+}

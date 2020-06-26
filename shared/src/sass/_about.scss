@@ -1,0 +1,20 @@
+.about{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    // height: auto;
+    background-image: url('../images/review/review.jpg');
+    .about_content {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        @include breakpoint(tablet){
+            width: 100%;
+        }
+        .para{
+            color: $black;
+            font-size: 16px;
+        }
+    }
+}

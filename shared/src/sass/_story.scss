@@ -1,0 +1,45 @@
+.story{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    // height: auto;
+    background-image: url('../images/review/review.jpg');
+    .story_element{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        @include breakpoint(tablet){
+            max-width: 80%;
+            margin: 0 auto 25px;
+        }
+        @include breakpoint(mobile_sm){
+            max-width: 100%;
+        }
+        .story_item{
+            flex: 33.33%;
+            padding: 0px 15px;
+            box-sizing: border-box;
+            text-align: center;
+            @include breakpoint(tablet){
+                flex: 100%;
+                margin: 0 auto 25px;
+            }
+            .num{
+                color: $base1;
+                font-size: 32px;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                display: inline-block;
+            }
+            .para{
+                max-width: 80%;
+                margin: 0 auto;
+                color: $black;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}

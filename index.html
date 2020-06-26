@@ -4,15 +4,328 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
     <title>Cafe | Html Template</title>
+
+    <!-- Google Font  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!--
+        css-file-includ-here	  
+    ======================================= -->
+    <!-- Swiper css  -->
     <link rel="stylesheet" href="./shared/dist/assets/css/swiper.min.css">
+    <!-- Main stylesheet  -->
     <link rel="stylesheet" href="./shared/dist/assets/css/app.css">
 </head>
 
 <body>
-    <div class="test">
-        <h5>Welcome in, Gulp js html boilerplate.</h5>
+    <!-- Header Start Here -->
+    <header>
+        <div class="header_area">
+            <div class="container">
+                <div class="header_wrapper">
+                    <div class="menu_toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <img src="./shared/src/images/common/logo.png" alt="Site Logo">
+                        </a>
+                    </h1>
+                    <nav class="navbar_area">
+                        <ul class="navbar">
+                            <li class="nav_list">
+                                <a href="javascript:void()" class="nav_item">Menu</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="our-story.html" class="nav_item">Our Story</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="javascript:void()" class="nav_item">Contact</a>
+                            </li>
+                            <li class="nav_list">
+                                <a href="javascript:void()" class="nav_item">Events</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End Here -->
+
+    <!-- Banner Start Here -->
+    <section class="banner">
+        <!-- Swiper -->
+        <div class="banner-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide banner_element style_one">
+                    <div class="container">
+                        <div class="banner_content">
+                            <h2 class="heading">Eat Delicious</h2>
+                            <h4 class="subtitle">Stay Healthy</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide banner_element style_two">
+                    <div class="container">
+                        <div class="banner_content">
+                            <h2 class="heading">Eat Delicious</h2>
+                            <h4 class="subtitle">Stay Healthy</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide banner_element style_three">
+                    <div class="container">
+                        <div class="banner_content">
+                            <h2 class="heading">Eat Delicious</h2>
+                            <h4 class="subtitle">Stay Healthy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- Banner End Here -->
+
+    <!-- Favorite Start Here -->
+    <section class="favorite section_padding">
+        <div class="container">
+            <div class="section_heading">
+                <h3 class="title">Our Favorites</h3>
+            </div>
+            <div class="favorite-container">
+                <!-- Add Pagination -->
+                <div class="fav-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="favorite_item">
+                            <div class="thumb">
+                                <a href="javascript:void()">
+                                    <img src="./shared/src/images/favorite/favorite-1.jpg" alt="Favorite">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5 class="title">
+                                    <a href="javascript:void()">Noodle Pasta</a>
+                                </h5>
+                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim
+                                    magna,
+                                    iaculis vel dolor nec, imperdiet pellentesque dui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="favorite_item">
+                            <div class="thumb">
+                                <a href="javascript:void()">
+                                    <img src="./shared/src/images/favorite/favorite-2.jpg" alt="Favorite">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5 class="title">
+                                    <a href="javascript:void()">Mango Cake</a>
+                                </h5>
+                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim
+                                    magna,
+                                    iaculis vel dolor nec, imperdiet pellentesque dui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="favorite_item">
+                            <div class="thumb">
+                                <a href="javascript:void()">
+                                    <img src="./shared/src/images/favorite/favorite-3.jpg" alt="Favorite">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5 class="title">
+                                    <a href="javascript:void()">Cupcakes</a>
+                                </h5>
+                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim
+                                    magna,
+                                    iaculis vel dolor nec, imperdiet pellentesque dui.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="favorite_item">
+                            <div class="thumb">
+                                <a href="javascript:void()">
+                                    <img src="./shared/src/images/favorite/favorite-4.jpg" alt="Favorite">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5 class="title">
+                                    <a href="javascript:void()">Croissants</a>
+                                </h5>
+                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim
+                                    magna,
+                                    iaculis vel dolor nec, imperdiet pellentesque dui.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Favorite End Here -->
+
+    <!-- Menu Start Here -->
+    <section class="menu section_padding">
+        <div class="container">
+            <div class="section_heading">
+                <h3 class="title">Our Tasty Menu</h3>
+            </div>
+            <div class="menu_element row">
+                <div class="menu_item">
+                    <div class="thumb">
+                        <img src="./shared/src/images/menu/menu-1.jpg" alt="Menu">
+                    </div>
+                    <h6 class="title">
+                        <a href="javascript:void()">Drinks</a>
+                    </h6>
+                </div>
+                <div class="menu_item">
+                    <div class="thumb">
+                        <img src="./shared/src/images/menu/menu-2.jpg" alt="Menu">
+                    </div>
+                    <h6 class="title">
+                        <a href="javascript:void()">Snacks</a>
+                    </h6>
+                </div>
+                <div class="menu_item">
+                    <div class="thumb">
+                        <img src="./shared/src/images/menu/menu-3.jpg" alt="Menu">
+                    </div>
+                    <h6 class="title">
+                        <a href="javascript:void()">Lunch</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu End Here -->
+
+    <!-- Review Start Here -->
+    <section class="review section_padding">
+        <div class="container">
+            <div class="section_heading">
+                <h3 class="title">Customer Reviews</h3>
+            </div>
+            <div class="review-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="review_content">
+                            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
+                                convallis
+                                libero. Donec vitae imperdiet lorem, id
+                                tincidunt eros. Duis a quam ut purus pharetra sodales. Mauris erat leo, molestie in
+                                pretium
+                                tempor, aliquam id risus.
+                                Pellentesque ac semper tortor. Vestibulum ante ipsum primis in faucibus orci luctus et
+                                ultrices posuere cubilia Curae;
+                                Aenean arcu nunc, venenatis eu venenatis lacinia, dapibus sit amet nulla.</p>
+                            <h6 class="name">John Smith</h6>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_content">
+                            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
+                                convallis
+                                libero. Donec vitae imperdiet lorem, id
+                                tincidunt eros. Duis a quam ut purus pharetra sodales. Mauris erat leo, molestie in
+                                pretium
+                                tempor, aliquam id risus.
+                                Pellentesque ac semper tortor. Vestibulum ante ipsum primis in faucibus orci luctus et
+                                ultrices posuere cubilia Curae;
+                                Aenean arcu nunc, venenatis eu venenatis lacinia, dapibus sit amet nulla.</p>
+                            <h6 class="name">John Doe</h6>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review_content">
+                            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel
+                                convallis
+                                libero. Donec vitae imperdiet lorem, id
+                                tincidunt eros. Duis a quam ut purus pharetra sodales. Mauris erat leo, molestie in
+                                pretium
+                                tempor, aliquam id risus.
+                                Pellentesque ac semper tortor. Vestibulum ante ipsum primis in faucibus orci luctus et
+                                ultrices posuere cubilia Curae;
+                                Aenean arcu nunc, venenatis eu venenatis lacinia, dapibus sit amet nulla.</p>
+                            <h6 class="name">Paul Shink</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- pagination -->
+                <div class="review-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Review End Here -->
+
+    <!-- Gallary Start Here -->
+    <section class="gallary">
+        <div class="gallary_element">
+            <div class="left">
+                <img src="./shared/src/images/gallary/gallary-1.jpg" alt="Gallary">
+            </div>
+            <div class="middle">
+                <div class="middle_inner">
+                    <div class="inner_left">
+                        <img src="./shared/src/images/gallary/gallary-2.jpg" alt="Gallary">
+                    </div>
+                    <div class="inner_right">
+                        <img src="./shared/src/images/gallary/gallary-3.jpg" alt="Gallary">
+                    </div>
+                </div>
+
+                <img src="./shared/src/images/gallary/gallery-4.jpg" alt="Gallary">
+                <img src="./shared/src/images/gallary/gallery-4.jpg" alt="Gallary">
+            </div>
+            <div class="right">
+                <img src="./shared/src/images/gallary/gallery-5.jpg" alt="Gallary">
+            </div>
+        </div>
+    </section>
+    <!-- Gallary End Here -->
+
+    <!-- Map Start Here-->
+    <section id="map" class="home-map">
+        <div id="home-map" class="map"></div>
+    </section>
+    <!-- Map End Here -->
+
+
+    <!-- Footer Start Here -->
+    <footer>
+        <p class="text">© 2016 <a href="javascript:void()"> Cafe</a>, All rights reserved.</p>
+    </footer>
+    <!-- Footer End Here -->
+
+    <!-- Scroll Top -->
+    <div class="scroll-top">
+        <div class="scrollToTop">
+            <span>
+                <img src="./shared/src/images/common/scroll-top.png" alt="scroll">
+            </span>
+        </div>
     </div>
+    <!-- Scroll Top \ -->
+
     <script type="text/javascript" src="./shared/dist/assets/js/plugin.js"></script>
+    <!-- Google Map -->
+    <script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAQlXnmyNPAeN3c3HNyWoUMqDk6bDF31Cg"></script>
+    <script type="text/javascript" src="./shared/dist/assets/js/g-map.js"></script>
     <script type="text/javascript" src="./shared/dist/assets/js/function.js"></script>
 </body>
 
